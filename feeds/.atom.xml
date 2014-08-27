@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Math Maniac's Musings</title><link href="/" rel="alternate"></link><link href="/feeds/.atom.xml" rel="self"></link><id>/</id><updated>2014-06-18T11:59:28-07:00</updated><entry><title>Some Partial Solutions to Math 120 Homework</title><link href="/a-temporary-article.html" rel="alternate"></link><updated>2014-06-18T11:59:28-07:00</updated><author><name>Gary Church</name></author><id>tag:,2014-06-18:a-temporary-article.html</id><summary type="html">&lt;h2&gt;Section 1.8,&amp;nbsp;#10&lt;/h2&gt;
+&lt;p&gt;A pound of dried pineapple bits sells for \&lt;mathjax&gt;$5.89, a pound of dried banana chips sells for \$&lt;/mathjax&gt;5.09, and a pound of raisins sells for \&lt;mathjax&gt;$2.79. Two pounds of raisins are to be mixed with equal amounts of pineapple and banana to create a trail mix that will sell for \$&lt;/mathjax&gt;3.59 a pound. How many pounds of pineapple and banana chips should be used? (Round your answer to the nearest hundredth of a&amp;nbsp;pound.) &lt;/p&gt;
+&lt;p&gt;Let &lt;mathjax&gt;$p$&lt;/mathjax&gt; be the number of pounds of pineapple bits required.
+Let &lt;mathjax&gt;$b$&lt;/mathjax&gt; be the number of pounds of banana chips required.
+We are told that we will be using 2 pounds of raisins at \&lt;mathjax&gt;$2.79/pound.&lt;/p&gt;
+&lt;p&gt;We are also told that equal amounts (numbers of pounds) of pineapple and banana are going to be used, so that means $&lt;/mathjax&gt;p = b&lt;mathjax&gt;$. The total value of the mixture is to be \$&lt;/mathjax&gt;3.59 per&amp;nbsp;pound.&lt;/p&gt;
+&lt;p&gt;The value of the pineapple bits is: (# pounds of bits)(price per pound of bits) = &lt;mathjax&gt;$p (5.89) = 5.89 p$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;The value of the banana chips is: (# pounds of chips)(price per pound of chips) = &lt;mathjax&gt;$b (5.09) = 5.09 b = 5.09 p$&lt;/mathjax&gt;, since &lt;mathjax&gt;$b = p$&lt;/mathjax&gt;. Note that we are trying to get the equation in terms of a single variable rather than two different&amp;nbsp;variables.&lt;/p&gt;
+&lt;p&gt;The value of the raising is: (# pounds of raisins)(price per pound of raisins) = &lt;mathjax&gt;$2 (2.79) = 5.58$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;The total value of the mixture is: (# pounds of mixture)(price per pound of mixture) = &lt;mathjax&gt;$(p + b + 2) (3.59) = (p + p + 2) (3.59) = (2p + 2) (3.59)$&lt;/mathjax&gt;. Note again that the first equality follows, since &lt;mathjax&gt;$b = p$&lt;/mathjax&gt;.&lt;/p&gt;
+&lt;p&gt;Adding up the total values of all the ingredients gives the total value of the mixture: &lt;mathjax&gt;$5.89 p + 5.09 p + 5.58 = (2p + 2)(3.59)$&lt;/mathjax&gt;.&lt;/p&gt;
+&lt;p&gt;Solve this last equation for &lt;mathjax&gt;$p$&lt;/mathjax&gt; and you will know how many pounds of pineapple chips must be used. You will also know how many pounds of banana chips must be used since &lt;mathjax&gt;$b = p$&lt;/mathjax&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$\begin{equation&lt;em&gt;}
+x = \frac{-b \pm\sqrt{b^2 - 4ac}}{2a}
+\end{equation&lt;/em&gt;}$$&lt;/mathjax&gt;&lt;/p&gt;&lt;script type= "text/javascript"&gt;
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+&lt;/script&gt;
+</summary><category term=""></category></entry></feed>
