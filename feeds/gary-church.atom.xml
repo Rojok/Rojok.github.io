@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Math Maniac's Musings</title><link href="/" rel="alternate"></link><link href="/feeds/gary-church.atom.xml" rel="self"></link><id>/</id><updated>2014-06-18T11:59:28-07:00</updated><entry><title>Some Partial Solutions to Math 120 Homework</title><link href="/a-temporary-article.html" rel="alternate"></link><updated>2014-06-18T11:59:28-07:00</updated><author><name>Gary Church</name></author><id>tag:,2014-06-18:a-temporary-article.html</id><summary type="html">&lt;h2&gt;Section 1.8, #10&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Math Maniac's Musings</title><link href="/" rel="alternate"></link><link href="/feeds/gary-church.atom.xml" rel="self"></link><id>/</id><updated>2014-08-23T17:18:35-07:00</updated><entry><title>Math252 Selected Homework Solutions</title><link href="/math252-selected-homework-solutions.html" rel="alternate"></link><updated>2014-08-23T17:18:35-07:00</updated><author><name>Gary Church</name></author><id>tag:,2014-08-23:math252-selected-homework-solutions.html</id><summary type="html">&lt;!-- \\(
+   \def\RR{\mathcal\bf R}
+   \def\bold#1{\bf #1}
+\\) --&gt;
+
+&lt;h2&gt;Section 5.2, #4&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="images/integral.png" title="Problem 4, section 5.2" /&gt;&lt;/p&gt;
+&lt;p&gt;Here $f(x) = 3x^2 + 4x + 3$ and the interval of integration is $[5, 11]$. Since $n = 3$, $\Delta x = (11 - 5) / 3 = 6 / 3 = 2$. Therefore, the subintervals are $[5, 7], [7, 9]$ and $[9, 11]$. Using the right endpoints of the subintervals for our sample points $x_i^*$, we would be evaluating $f$ at $7, 9$ and $11$. Putting this together to approximate the definite integral of $f$ using right endpoints (a "right-Riemann sum") gives:&lt;/p&gt;
+&lt;p&gt;$$\begin{align}
+    \begin{split}
+\int_5^{11} f(x)\,dx &amp;amp;\approx \sum_{i = 1}^3 f(x_i^{\star}) \Delta x \\
+&amp;amp;= f(7)(2) + f(9)(2) + f(11)(2)\\[1ex]
+&amp;amp;= (3(7)^2 + 4(7) + 3)(2) + (3(9)^2 + 4(9) + 3)(2)\\ &amp;amp;\qquad + (3(11)^2 + 4(11) + 3)(2)\\[1ex]
+&amp;amp;= 178(2) + 282(2) + 410(2)\\[1ex]
+&amp;amp;= 1740
+    \end{split}
+\end{align}$$&lt;/p&gt;
+&lt;h2&gt;Section 5.2p2, #2&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="images/sec5.2p3n1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;In this problem, $R_n$ represents $\sum_{i=1}^n f(x_i)\Delta x$, where $x_i$ is the right endpoint of the $i$ th subinterval and $f(x) = \frac{1}{2}\,x^2 + 4.$&lt;/p&gt;
+&lt;p&gt;We partition the interval of integration $[0, 2]$ into $n$ subintervals, each of width $\Delta x = \frac{2 - 0}{n} = \frac{2}{n}$. Since the left endpoint of the interval of integration is 0, the coordinate of the right endpoint of the $i$ th subinterval, $x_i$, is given by $x_i = i \Delta x = \frac{2i}{n}$.&lt;/p&gt;
+&lt;p&gt;The value of $f$ at the right endpoint of the $i$ th subinterval is given by
+\[f(x_i) = \frac{1}{2}\left(\frac{2i}{n}\right)^2 + 4 = \frac{2i^2}{n^2} + 4\]&lt;/p&gt;
+&lt;p&gt;Putting this all together, we have
+\[ R_n = \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \left(\frac{2i^2}{n^2} + 4\right)\frac{2}{n}\]&lt;/p&gt;
+&lt;p&gt;We now need to use the various properties of sums to express $R_n$ as a function of $n$ (without the summation sign.) We can start by factoring out the $\frac{2}{n}$ factor, since for a given value of $n$ it is a constant. Doing this gives
+\[ R_n = \frac{2}{n}\sum_{i=1}^n \left(\frac{2i^2}{n^2} + 4\right) \]&lt;/p&gt;
+&lt;p&gt;Continue using properties of sums to simplify this expression and we will be done with the first part of the problem.&lt;/p&gt;&lt;script type= "text/javascript"&gt;
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+&lt;/script&gt;
+</summary><category term=""></category></entry><entry><title>Some Partial Solutions to Math 120 Homework</title><link href="/a-temporary-article.html" rel="alternate"></link><updated>2014-06-18T11:59:28-07:00</updated><author><name>Gary Church</name></author><id>tag:,2014-06-18:a-temporary-article.html</id><summary type="html">&lt;h2&gt;Section 1.8, #10&lt;/h2&gt;
 &lt;p&gt;A pound of dried pineapple bits sells for \$5.89, a pound of dried banana chips sells for \$5.09, and a pound of raisins sells for \$2.79. Two pounds of raisins are to be mixed with equal amounts of pineapple and banana to create a trail mix that will sell for \$3.59 a pound. How many pounds of pineapple and banana chips should be used? (Round your answer to the nearest hundredth of a pound.) &lt;/p&gt;
 &lt;p&gt;Let $p$ be the number of pounds of pineapple bits required.
 Let $b$ be the number of pounds of banana chips required.
