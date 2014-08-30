@@ -1786,7 +1786,30 @@ jQuery(document).ready(function($) {
 \[ R_n = \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \left(-\frac{9i^2}{2n^2} + 4\right)\frac{3}{n}\]</p>
 <p>We now need to use the various properties of sums to express $R_n$ as a function of $n$ (without the summation sign.) We can start by factoring out the $\frac{3}{n}$ factor, since for a given value of $n$ it is a constant. Doing this gives
 \[ R_n = -\frac{3}{n}\sum_{i=1}^n \left(\frac{9i^2}{2n^2} + 4\right) \]</p>
-<p>Continue using properties of sums to simplify this expression and we will be done with the first part of the problem.</p><script type= "text/javascript">
+<p>Continue using properties of sums to simplify this expression and we will be done with the first part of the problem.</p>
+<h2>Section 5.2p2, #1</h2>
+<p><img alt="Alt text" src="images/sec5.2p2n1.png" /></p>
+<p>In this problem we are given the terms of the Riemann sum of some function $f(x)$ over some interval $[a, b]$. From the form of the terms we are to determine the function $f$ and the upper limit of integration $b$. To do this we compare the form of the given terms with those in the definition of the definite integral of a function $f$ over an interval $[a, b]$,</p>
+<p>$$
+\begin{align}
+\int_a^b f(x)\,dx &amp;= \sum_{i=1}^n f(x_i^\star)\Delta x \\[1.5ex]
+&amp;= f(x_1^\star)\Delta x + f(x_2^\star)\Delta x + f(x_3^\star)\Delta x + \cdots + f(x_n^\star)\Delta x
+\end{align}
+$$</p>
+<p>where $x_i^\star$ is a the sample point within the $i$th interval where we evaluate the function and $\Delta x$ is the width of the interval. Here we are assuming that the interval is partitioned into $n$ subintervals of equal width, hence $\Delta x = (b - a)/n$.</p>
+<p>If we choose our sample point $x_i^\star$ as the right endpoint of the $i$th subinterval, then $x_i^\star = x_i$. We can get the coordinate of $x_i$ by starting from the left endpoint of the interval $[a, b]$ and adding $\Delta x$ a total of $i$ times. Therefore, $x_i = a + i\Delta x$.</p>
+<p>We now have enough information to put the pieces together. The terms of the Riemann sum have the form $f(x_i)\Delta x$, where $\Delta x = (b - a)/n$ and $x_i = a + i\Delta x = a + i(b-a)/n$. Looking at the given terms of the Riemann sum we see that:</p>
+<ul>
+<li>$f(x_1)\Delta x = \frac{1}{1+(5/n)}\cdot\frac{5}{n}$</li>
+<li>$f(x_2)\Delta x = \frac{1}{1+2(5/n)}\cdot\frac{5}{n}$</li>
+<li>$f(x_3)\Delta x = \frac{1}{1+3(5/n)}\cdot\frac{5}{n}$</li>
+<li>$\vdots$</li>
+<li>$f(x_n)\Delta x = \frac{1}{1+n(5/n)}\cdot\frac{5}{n}$</li>
+</ul>
+<p>From this we can relate $\Delta x$ to $\frac{5}{n}$. Since $\Delta x = \frac{b - a}{n}$ and we know that $a = 1$ (it is the left endpoint of the interval of integration), we conclude that $b = 6$.</p>
+<p>Finally, we see that the factors of $\Delta x$ in the Riemann sum must be </p>
+<p>\[f(x_i) = f(a + i\Delta x) = f(1 + i(5/n)) = \frac{1}{1 + i(5/n)}\]</p>
+<p>Hence, $f(x) = \frac{1}{x}$.</p><script type= "text/javascript">
     if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
         var mathjaxscript = document.createElement('script');
         mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
