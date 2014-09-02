@@ -296,12 +296,12 @@ In&amp;nbsp;[]:
 &lt;p&gt;&lt;img alt="Alt text" src="images/sec5.2p3n1.png" title="Problem 1, section 5.2p3" /&gt;&lt;/p&gt;
 &lt;p&gt;In this problem, $R_n$ represents $\sum_{i=1}^n f(x_i)\Delta x$, where $x_i$ is the right endpoint of the $i$ th subinterval and $f(x) = -\frac{1}{2}\,x^2 + 4.$&lt;/p&gt;
 &lt;p&gt;We partition the interval of integration $[0, 3]$ into $n$ subintervals, each of width $\Delta x = \frac{3 - 0}{n} = \frac{3}{n}$. Since the left endpoint of the interval of integration is 0, the coordinate of the right endpoint of the $i$ th subinterval, $x_i$, is given by $x_i = i \Delta x = \frac{3i}{n}$.&lt;/p&gt;
-&lt;p&gt;The value of $f$ at the right endpoint of the $i$ th subinterval is given by
-\[f(x_i) = -\frac{1}{2}\left(\frac{3i}{n}\right)^2 + 4 = -\frac{9i^2}{2n^2} + 4\]&lt;/p&gt;
-&lt;p&gt;Putting this all together, we have
-\[ R_n = \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \left(-\frac{9i^2}{2n^2} + 4\right)\frac{3}{n}\]&lt;/p&gt;
-&lt;p&gt;We now need to use the various properties of sums to express $R_n$ as a function of $n$ (without the summation sign.) We can start by factoring out the $\frac{3}{n}$ factor, since for a given value of $n$ it is a constant. Doing this gives
-\[ R_n = -\frac{3}{n}\sum_{i=1}^n \left(\frac{9i^2}{2n^2} + 4\right) \]&lt;/p&gt;
+&lt;p&gt;The value of $f$ at the right endpoint of the $i$ th subinterval is given by&lt;/p&gt;
+&lt;p&gt;$$f(x_i) = -\frac{1}{2}\left(\frac{3i}{n}\right)^2 + 4 = -\frac{9i^2}{2n^2} + 4$$&lt;/p&gt;
+&lt;p&gt;Putting this all together, we have&lt;/p&gt;
+&lt;p&gt;$$R_n = \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \left(-\frac{9i^2}{2n^2} + 4\right)\frac{3}{n}$$&lt;/p&gt;
+&lt;p&gt;We now need to use the various properties of sums to express $R_n$ as a function of $n$ (without the summation sign.) We can start by factoring out the $\frac{3}{n}$ factor, since for a given value of $n$ it is a constant. Doing this gives&lt;/p&gt;
+&lt;p&gt;$$R_n = -\frac{3}{n}\sum_{i=1}^n \left(\frac{9i^2}{2n^2} + 4\right)$$&lt;/p&gt;
 &lt;p&gt;Continue using properties of sums to simplify this expression and we will be done with the first part of the problem.&lt;/p&gt;
 &lt;h2&gt;Section 5.2p2, #1&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Alt text" src="images/sec5_2p2n1.png" title="Problem 1, section 5.2p2" /&gt;&lt;/p&gt;
@@ -324,7 +324,7 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;From this we can relate $\Delta x$ to $\frac{5}{n}$. Since $\Delta x = \frac{b - a}{n}$ and we know that $a = 1$ (it is the left endpoint of the interval of integration), we conclude that $b = 6$.&lt;/p&gt;
 &lt;p&gt;Finally, we see that the factors of $\Delta x$ in the Riemann sum must be &lt;/p&gt;
-&lt;p&gt;\[ f(x_i) = f(a + i\Delta x) = f(1 + i(5/n)) = \frac{1}{1 + i(5/n)} \]&lt;/p&gt;
+&lt;p&gt;$$f(x_i) = f(a + i\Delta x) = f(1 + i(5/n)) = \frac{1}{1 + i(5/n)}$$&lt;/p&gt;
 &lt;p&gt;Hence, $f(x) = \frac{1}{x}$.&lt;/p&gt;&lt;script type= "text/javascript"&gt;
     if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
         var mathjaxscript = document.createElement('script');
