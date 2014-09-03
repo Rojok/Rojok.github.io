@@ -299,10 +299,21 @@ In&amp;nbsp;[]:
 &lt;p&gt;The value of $f$ at the right endpoint of the $i$ th subinterval is given by&lt;/p&gt;
 &lt;p&gt;$$f(x_i) = -\frac{1}{2}\left(\frac{3i}{n}\right)^2 + 4 = -\frac{9i^2}{2n^2} + 4$$&lt;/p&gt;
 &lt;p&gt;Putting this all together, we have&lt;/p&gt;
-&lt;p&gt;$$R_n = \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \left(-\frac{9i^2}{2n^2} + 4\right)\frac{3}{n}$$&lt;/p&gt;
-&lt;p&gt;We now need to use the various properties of sums to express $R_n$ as a function of $n$ (without the summation sign.) We can start by factoring out the $\frac{3}{n}$ factor, since for a given value of $n$ it is a constant. Doing this gives&lt;/p&gt;
-&lt;p&gt;$$R_n = -\frac{3}{n}\sum_{i=1}^n \left(\frac{9i^2}{2n^2} + 4\right)$$&lt;/p&gt;
-&lt;p&gt;Continue using properties of sums to simplify this expression and we will be done with the first part of the problem.&lt;/p&gt;
+&lt;p&gt;$$R_n = \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \left(-\frac{9i^2}{2n^2} + 4\right)\frac{3}{n} = \sum_{i=1}^n \left(-\frac{27i^2}{2n^3} + \frac{12}{n}
+\right)$$&lt;/p&gt;
+&lt;p&gt;We now need to use the various properties of sums to express $R_n$ as a function of $n$ (without the summation sign.) Doing this gives&lt;/p&gt;
+&lt;p&gt;$$R_n = -\frac{27}{2n^3}\sum_{i=1}^n i^2 + \frac{1}{n}\sum_{i=1}^n 12$$&lt;/p&gt;
+&lt;p&gt;Note that for a given value of $n$, factors containing $n$ are constants and can, therefore, be factored out of the sums. We now use the formulas&lt;/p&gt;
+&lt;p&gt;$$\sum_{i=1}^n i^2 = \tfrac{1}{6}(n)(n+1)(2n+1) \text{ and } 
+\sum_{i=1}^n 12 = 12n$$&lt;/p&gt;
+&lt;p&gt;to replace the sums in our expression for $R_n$ to get&lt;/p&gt;
+&lt;p&gt;$$
+\begin{align}
+R_n &amp;amp;= -\frac{27}{2n^3}\cdot\frac{1}{6}(n)(n+1)(2n+1) + \frac{1}{n}(12n) \\[1.5ex]
+&amp;amp;= -\frac{9}{4}\cdot\frac{n}{n}\cdot\frac{n+1}{n}\cdot\frac{2n+1}{n} + 12\\[1.5ex]
+&amp;amp;= -\frac{9}{4}\left(\frac{n+1}{n}\right)\left(\frac{2n+1}{n}\right) + 12
+\end{align}
+$$&lt;/p&gt;
 &lt;h2&gt;Section 5.2p2, #1&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Alt text" src="images/sec5_2p2n1.png" title="Problem 1, section 5.2p2" /&gt;&lt;/p&gt;
 &lt;p&gt;In this problem we are given the terms of the Riemann sum of some function $f(x)$ over some interval $[a, b]$. From the form of the terms we are to determine the function $f$ and the upper limit of integration $b$. To do this we compare the form of the given terms with those in the definition of the definite integral of a function $f$ over an interval $[a, b]$,&lt;/p&gt;

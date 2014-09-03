@@ -1783,10 +1783,21 @@ jQuery(document).ready(function($) {
 <p>The value of $f$ at the right endpoint of the $i$ th subinterval is given by</p>
 <p>$$f(x_i) = -\frac{1}{2}\left(\frac{3i}{n}\right)^2 + 4 = -\frac{9i^2}{2n^2} + 4$$</p>
 <p>Putting this all together, we have</p>
-<p>$$R_n = \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \left(-\frac{9i^2}{2n^2} + 4\right)\frac{3}{n}$$</p>
-<p>We now need to use the various properties of sums to express $R_n$ as a function of $n$ (without the summation sign.) We can start by factoring out the $\frac{3}{n}$ factor, since for a given value of $n$ it is a constant. Doing this gives</p>
-<p>$$R_n = -\frac{3}{n}\sum_{i=1}^n \left(\frac{9i^2}{2n^2} + 4\right)$$</p>
-<p>Continue using properties of sums to simplify this expression and we will be done with the first part of the problem.</p>
+<p>$$R_n = \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \left(-\frac{9i^2}{2n^2} + 4\right)\frac{3}{n} = \sum_{i=1}^n \left(-\frac{27i^2}{2n^3} + \frac{12}{n}
+\right)$$</p>
+<p>We now need to use the various properties of sums to express $R_n$ as a function of $n$ (without the summation sign.) Doing this gives</p>
+<p>$$R_n = -\frac{27}{2n^3}\sum_{i=1}^n i^2 + \frac{1}{n}\sum_{i=1}^n 12$$</p>
+<p>Note that for a given value of $n$, factors containing $n$ are constants and can, therefore, be factored out of the sums. We now use the formulas</p>
+<p>$$\sum_{i=1}^n i^2 = \tfrac{1}{6}(n)(n+1)(2n+1) \text{ and } 
+\sum_{i=1}^n 12 = 12n$$</p>
+<p>to replace the sums in our expression for $R_n$ to get</p>
+<p>$$
+\begin{align}
+R_n &amp;= -\frac{27}{2n^3}\cdot\frac{1}{6}(n)(n+1)(2n+1) + \frac{1}{n}(12n) \\[1.5ex]
+&amp;= -\frac{9}{4}\cdot\frac{n}{n}\cdot\frac{n+1}{n}\cdot\frac{2n+1}{n} + 12\\[1.5ex]
+&amp;= -\frac{9}{4}\left(\frac{n+1}{n}\right)\left(\frac{2n+1}{n}\right) + 12
+\end{align}
+$$</p>
 <h2>Section 5.2p2, #1</h2>
 <p><img alt="Alt text" src="images/sec5_2p2n1.png" title="Problem 1, section 5.2p2" /></p>
 <p>In this problem we are given the terms of the Riemann sum of some function $f(x)$ over some interval $[a, b]$. From the form of the terms we are to determine the function $f$ and the upper limit of integration $b$. To do this we compare the form of the given terms with those in the definition of the definite integral of a function $f$ over an interval $[a, b]$,</p>
