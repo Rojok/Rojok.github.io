@@ -283,7 +283,7 @@ In&amp;nbsp;[]:
 &lt;h2&gt;Section 5.2, #4&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Alt text" src="images/integral.png" title="Problem 4, section 5.2" /&gt;&lt;/p&gt;
 &lt;p&gt;Here $f(x) = 3x^2 + 4x + 3$ and the interval of integration is $[5, 11]$. Since $n = 3$, $\Delta x = (11 - 5) / 3 = 6 / 3 = 2$. Therefore, the subintervals are $[5, 7], [7, 9]$ and $[9, 11]$. Using the right endpoints of the subintervals for our sample points $x_i^*$, we would be evaluating $f$ at $7, 9$ and $11$. Putting this together to approximate the definite integral of $f$ using right endpoints (a "right-Riemann sum") gives:&lt;/p&gt;
-&lt;p&gt;$$\begin{align}
+&lt;p&gt;$$\begin{align*}
     \begin{split}
 \int_5^{11} f(x)\,dx &amp;amp;\approx \sum_{i = 1}^3 f(x_i^{\star}) \Delta x \\
 &amp;amp;= f(7)(2) + f(9)(2) + f(11)(2)\\[1ex]
@@ -291,7 +291,7 @@ In&amp;nbsp;[]:
 &amp;amp;= 178(2) + 282(2) + 410(2)\\[1ex]
 &amp;amp;= 1740
     \end{split}
-\end{align}$$&lt;/p&gt;
+\end{align*}$$&lt;/p&gt;
 &lt;h2&gt;Section 5.2p2, #2&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Alt text" src="images/sec5.2p3n1.png" title="Problem 1, section 5.2p3" /&gt;&lt;/p&gt;
 &lt;p&gt;In this problem, $R_n$ represents $\sum_{i=1}^n f(x_i)\Delta x$, where $x_i$ is the right endpoint of the $i$ th subinterval and $f(x) = -\frac{1}{2}\,x^2 + 4.$&lt;/p&gt;
@@ -308,20 +308,20 @@ In&amp;nbsp;[]:
 \sum_{i=1}^n 12 = 12n$$&lt;/p&gt;
 &lt;p&gt;to replace the sums in our expression for $R_n$ to get&lt;/p&gt;
 &lt;p&gt;$$
-\begin{align}
+\begin{align*}
 R_n &amp;amp;= -\frac{27}{2n^3}\cdot\frac{1}{6}(n)(n+1)(2n+1) + \frac{1}{n}(12n) \\[1.5ex]
 &amp;amp;= -\frac{9}{4}\cdot\frac{n}{n}\cdot\frac{n+1}{n}\cdot\frac{2n+1}{n} + 12\\[1.5ex]
 &amp;amp;= -\frac{9}{4}\left(\frac{n+1}{n}\right)\left(\frac{2n+1}{n}\right) + 12
-\end{align}
+\end{align*}
 $$&lt;/p&gt;
 &lt;h2&gt;Section 5.2p2, #1&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Alt text" src="images/sec5_2p2n1.png" title="Problem 1, section 5.2p2" /&gt;&lt;/p&gt;
 &lt;p&gt;In this problem we are given the terms of the Riemann sum of some function $f(x)$ over some interval $[a, b]$. From the form of the terms we are to determine the function $f$ and the upper limit of integration $b$. To do this we compare the form of the given terms with those in the definition of the definite integral of a function $f$ over an interval $[a, b]$,&lt;/p&gt;
 &lt;p&gt;$$
-\begin{align}
+\begin{align*}
 \int_a^b f(x)\,dx &amp;amp;= \sum_{i=1}^n f(x_i^\star)\Delta x \\[1.5ex]
 &amp;amp;= f(x_1^\star)\Delta x + f(x_2^\star)\Delta x + f(x_3^\star)\Delta x + \cdots + f(x_n^\star)\Delta x
-\end{align}
+\end{align*}
 $$&lt;/p&gt;
 &lt;p&gt;where $x_i^\star$ is a the sample point within the $i$th interval where we evaluate the function and $\Delta x$ is the width of the interval. Here we are assuming that the interval is partitioned into $n$ subintervals of equal width, hence $\Delta x = (b - a)/n$.&lt;/p&gt;
 &lt;p&gt;If we choose our sample point $x_i^\star$ as the right endpoint of the $i$th subinterval, then $x_i^\star = x_i$. We can get the coordinate of $x_i$ by starting from the left endpoint of the interval $[a, b]$ and adding $\Delta x$ a total of $i$ times. Therefore, $x_i = a + i\Delta x$.&lt;/p&gt;
@@ -336,7 +336,23 @@ $$&lt;/p&gt;
 &lt;p&gt;From this we can relate $\Delta x$ to $\frac{5}{n}$. Since $\Delta x = \frac{b - a}{n}$ and we know that $a = 1$ (it is the left endpoint of the interval of integration), we conclude that $b = 6$.&lt;/p&gt;
 &lt;p&gt;Finally, we see that the factors of $\Delta x$ in the Riemann sum must be &lt;/p&gt;
 &lt;p&gt;$$f(x_i) = f(a + i\Delta x) = f(1 + i(5/n)) = \frac{1}{1 + i(5/n)}$$&lt;/p&gt;
-&lt;p&gt;Hence, $f(x) = \frac{1}{x}$.&lt;/p&gt;&lt;script type= "text/javascript"&gt;
+&lt;p&gt;Hence, $f(x) = \frac{1}{x}$.&lt;/p&gt;
+&lt;h2&gt;Section 5.3, #10&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="images/sec5.3n10.png" title="Problem 10, section 5.3" /&gt;&lt;/p&gt;
+&lt;p&gt;We will use the Fundamental Theorem of calculus &lt;/p&gt;
+&lt;p&gt;$$\frac{d}{dx}\int_a^x f(u)\,du = f(x)$$&lt;/p&gt;
+&lt;p&gt;to differentiate the given function of $x$ but have to break up the integral (function) into two seperate integrals (functions of $x$) and apply a property of integrals to put each one into the proper form; Integrating from a constant limit to a variable (function of $x$) limit. Also we will need to use the chain rule to differentiate each integral (function) since the upper limit of integration will itself be a function of $x$.&lt;/p&gt;
+&lt;p&gt;Doing this gives:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{align*}
+\frac{d}{dx} \int_{\cos x}^{4x} \cos(u^4)\,du 
+&amp;amp;=\frac{d}{dx}\left(\int_{\cos x}^0 \cos(u^4)\,du + \int_0^{4x} \cos(u^4)\,du\right)\\[1.5ex] 
+&amp;amp;=\frac{d}{dx}\left(-\int_0^{\cos x} \cos(u^4)\,du + \int_0^{4x} \cos(u^4)\,du\right)\\[1.5ex]
+&amp;amp;=\frac{d}{dx}\left(-\int_0^{\cos x} \cos(u^4)\,du\right) + \frac{d}{dx}\left(\int_0^{4x} \cos(u^4)\,du\right)\\[1.5ex]
+&amp;amp;= -\cos(\cos^4 x)(-\sin x) + \cos((4x)^4)(4)\\[1.5ex]
+&amp;amp;= (\sin x)\cos(\cos^4 x) + 4\cos(256x^4)
+\end{align*}
+$$&lt;/p&gt;&lt;script type= "text/javascript"&gt;
     if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
         var mathjaxscript = document.createElement('script');
         mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
