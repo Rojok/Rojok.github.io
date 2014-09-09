@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Math Maniac's Musings - Authors</title>
+  <title>Solution to problem #5, section 6.1</title>
   <meta name="author" content="Gary Church">
 
 
@@ -1737,13 +1737,13 @@ jQuery(document).ready(function($) {
 
 
 <ul class="main-navigation">
-    <li class="active">
+    <li >
     <a href="/category/.html"></a>
     </li>
     <li >
     <a href="/category/ipython-notebook.html">Ipython notebook</a>
     </li>
-    <li >
+    <li class="active">
     <a href="/category/math.html">Math</a>
     </li>
     <li >
@@ -1755,7 +1755,103 @@ jQuery(document).ready(function($) {
 </ul></nav>
   <div id="main">
     <div id="content">
-    <h1>Authors on Math Maniac's Musings</h1>        <li><a href="/author/gary-church.html">Gary Church</a> (8)</li>
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">Solution to problem #5, section 6.1</h1>
+      <p class="meta"><time datetime="2014-09-09T00:00:00" pubdate>Tue 09 September 2014</time></p>
+</header>
+
+  <div class="entry-content"><h1>Finding the slope that divides an area in half.</h1>
+<p>The picture is</p>
+<!-- /Users/gary/Documents/Lynda/Ex_Files_Mdle2_EssT_Tch/Exercise Files/Chapter 04/Finished/Exports from Bridge/Week 2 Gallery/content/bin/images/large/_0410559155.jpg -->
+
+<p><img alt="Alt text" src="images/slopeHalfArea.png" title="Problem 5, section 6.1" /></p>
+<p>The total area under the parabola is found by evaluating $\int_0^{7/5} 7x -
+5x^2\;dx$. This gives a value of 343/150. For a line of slope $m$ through
+the origin with equation $y = mx$, we want to calculate $\int_0^{x_B} (7x
+- 5x^2) - mx\;dx$, where $x_B$ is the x-coordinate of point B, the
+intersection point of the line and the parabola. This integral gives the area
+of the purple colored region in the picture. We then set the value of this
+integral equal to 343/300 (one half of the area of the parabolic region, and
+solve for $m$.</p>
+<p>The first thing to do is to find an expression for $x_B$ in terms of the
+slope $m$. We do this by solving the system of the equations corresponding
+to the two graphs</p>
+<p>$$\begin{align*} 
+y &amp;= mx\\ 
+y &amp;= 7x - 5x^2
+\end{align*}$$</p>
+<p>Setting the equations equal to one another and solving for $x$ gives $x =
+0 \text{ or } x = \frac{7 - m}{5}$. The non-zero value is our $x_B$.
+Therefore, the integral we need to evaluate is</p>
+<p>$$ \int_0^{(7-m)/5} 7x - 5x^2 - mx\;dx $$</p>
+<p>Using FTC 2 and evaluating between the limits of integration gives the
+expression</p>
+<p>$$ \frac{7}{2}\left(\frac{7-m}{5}\right)^2 -
+\frac{5}{3}\left(\frac{7-m}{5}\right)^3 -
+\frac{1}{2}m\left(\frac{7-m}{5}\right)^2$$</p>
+<p>Lets factor out $\left(\frac{7-m}{5}\right)^2$ and set the expression equal
+to 343/300.</p>
+<p>$$\left(\frac{7-m}{5}\right)^2 \left[\frac{7}{2} -
+\frac{5}{3}\left(\frac{7-m}{5}\right) - \frac{m}{2}\right] = \frac{343}{300}
+=\frac{5}{6}$$</p>
+<p>Now combine the fractions in the brackets and simplify to get</p>
+<p>$$\left(\frac{7-m}{5}\right)^2\left[\frac{7-m}{6}\right] = \frac{343}{300}$$</p>
+<p>Rewrite the fraction in the bracket as $\left(\frac{7-m}{5}\right)\cdot\frac{5}{6}$, so that we can combine the fractions into a cube power, thus</p>
+<p>$$ \left(\frac{7-m}{5}\right)^3\cdot\frac{5}{6} = \frac{343}{300}$$</p>
+<p>Solve for the cube, then take the cube root to get</p>
+<p>$$ \frac{7 - m}{5} = \sqrt[3]{\frac{343}{250}} = \frac{7}{5\sqrt[3]{2}} =
+\frac{7\sqrt[3]{4}}{10}$$</p>
+<p>(The last two equalities were simplifying the radical expression.)</p>
+<p>Finally, solving for the slope $m$, we get</p>
+<p>$$m = 7 - \frac{7\sqrt[3]{4}}{2} \approx 1.4441 $$</p>
+<p>TADA!!</p><script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
+</div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">Gary Church</span>
+  </span>
+<time datetime="2014-09-09T00:00:00" pubdate>Tue 09 September 2014</time>  <span class="categories">
+    <a class="category" href="/tag/math252.html">math252</a>
+    <a class="category" href="/tag/homework.html">homework</a>
+    <a class="category" href="/tag/solution.html">solution</a>
+  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+</div>
 <aside class="sidebar">
   <section>
     <h1>Recent Posts</h1>

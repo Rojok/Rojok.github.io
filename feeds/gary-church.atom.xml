@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Math Maniac's Musings</title><link href="/" rel="alternate"></link><link href="/feeds/gary-church.atom.xml" rel="self"></link><id>/</id><updated>2014-08-26T00:00:00-07:00</updated><entry><title>Riemann sums in Python</title><link href="/riemann-sums-in-python.html" rel="alternate"></link><updated>2014-08-26T00:00:00-07:00</updated><author><name>Gary Church</name></author><id>tag:,2014-08-26:riemann-sums-in-python.html</id><summary type="html">&lt;p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Math Maniac's Musings</title><link href="/" rel="alternate"></link><link href="/feeds/gary-church.atom.xml" rel="self"></link><id>/</id><updated>2014-09-09T00:00:00-07:00</updated><entry><title>Solution to problem #5, section 6.1</title><link href="/math252_section6_1_number_5_solution.html" rel="alternate"></link><updated>2014-09-09T00:00:00-07:00</updated><author><name>Gary Church</name></author><id>tag:,2014-09-09:math252_section6_1_number_5_solution.html</id><summary type="html">&lt;h1&gt;Finding the slope that divides an area in half.&lt;/h1&gt;
+&lt;p&gt;The picture is&lt;/p&gt;
+&lt;!-- /Users/gary/Documents/Lynda/Ex_Files_Mdle2_EssT_Tch/Exercise Files/Chapter 04/Finished/Exports from Bridge/Week 2 Gallery/content/bin/images/large/_0410559155.jpg --&gt;
+
+&lt;p&gt;&lt;img alt="Alt text" src="images/slopeHalfArea.png" title="Problem 5, section 6.1" /&gt;&lt;/p&gt;
+&lt;p&gt;The total area under the parabola is found by evaluating $\int_0^{7/5} 7x -
+5x^2\;dx$. This gives a value of 343/150. For a line of slope $m$ through
+the origin with equation $y = mx$, we want to calculate $\int_0^{x_B} (7x
+- 5x^2) - mx\;dx$, where $x_B$ is the x-coordinate of point B, the
+intersection point of the line and the parabola. This integral gives the area
+of the purple colored region in the picture. We then set the value of this
+integral equal to 343/300 (one half of the area of the parabolic region, and
+solve for $m$.&lt;/p&gt;
+&lt;p&gt;The first thing to do is to find an expression for $x_B$ in terms of the
+slope $m$. We do this by solving the system of the equations corresponding
+to the two graphs&lt;/p&gt;
+&lt;p&gt;$$\begin{align*} 
+y &amp;amp;= mx\\ 
+y &amp;amp;= 7x - 5x^2
+\end{align*}$$&lt;/p&gt;
+&lt;p&gt;Setting the equations equal to one another and solving for $x$ gives $x =
+0 \text{ or } x = \frac{7 - m}{5}$. The non-zero value is our $x_B$.
+Therefore, the integral we need to evaluate is&lt;/p&gt;
+&lt;p&gt;$$ \int_0^{(7-m)/5} 7x - 5x^2 - mx\;dx $$&lt;/p&gt;
+&lt;p&gt;Using FTC 2 and evaluating between the limits of integration gives the
+expression&lt;/p&gt;
+&lt;p&gt;$$ \frac{7}{2}\left(\frac{7-m}{5}\right)^2 -
+\frac{5}{3}\left(\frac{7-m}{5}\right)^3 -
+\frac{1}{2}m\left(\frac{7-m}{5}\right)^2$$&lt;/p&gt;
+&lt;p&gt;Lets factor out $\left(\frac{7-m}{5}\right)^2$ and set the expression equal
+to 343/300.&lt;/p&gt;
+&lt;p&gt;$$\left(\frac{7-m}{5}\right)^2 \left[\frac{7}{2} -
+\frac{5}{3}\left(\frac{7-m}{5}\right) - \frac{m}{2}\right] = \frac{343}{300}
+=\frac{5}{6}$$&lt;/p&gt;
+&lt;p&gt;Now combine the fractions in the brackets and simplify to get&lt;/p&gt;
+&lt;p&gt;$$\left(\frac{7-m}{5}\right)^2\left[\frac{7-m}{6}\right] = \frac{343}{300}$$&lt;/p&gt;
+&lt;p&gt;Rewrite the fraction in the bracket as $\left(\frac{7-m}{5}\right)\cdot\frac{5}{6}$, so that we can combine the fractions into a cube power, thus&lt;/p&gt;
+&lt;p&gt;$$ \left(\frac{7-m}{5}\right)^3\cdot\frac{5}{6} = \frac{343}{300}$$&lt;/p&gt;
+&lt;p&gt;Solve for the cube, then take the cube root to get&lt;/p&gt;
+&lt;p&gt;$$ \frac{7 - m}{5} = \sqrt[3]{\frac{343}{250}} = \frac{7}{5\sqrt[3]{2}} =
+\frac{7\sqrt[3]{4}}{10}$$&lt;/p&gt;
+&lt;p&gt;(The last two equalities were simplifying the radical expression.)&lt;/p&gt;
+&lt;p&gt;Finally, solving for the slope $m$, we get&lt;/p&gt;
+&lt;p&gt;$$m = 7 - \frac{7\sqrt[3]{4}}{2} \approx 1.4441 $$&lt;/p&gt;
+&lt;p&gt;TADA!!&lt;/p&gt;&lt;script type= "text/javascript"&gt;
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+&lt;/script&gt;
+</summary><category term="math252"></category><category term="homework"></category><category term="solution"></category></entry><entry><title>Riemann sums in Python</title><link href="/riemann-sums-in-python.html" rel="alternate"></link><updated>2014-08-26T00:00:00-07:00</updated><author><name>Gary Church</name></author><id>tag:,2014-08-26:riemann-sums-in-python.html</id><summary type="html">&lt;p&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
