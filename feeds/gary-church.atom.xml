@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Math Maniac's Musings</title><link href="/" rel="alternate"></link><link href="/feeds/gary-church.atom.xml" rel="self"></link><id>/</id><updated>2014-09-09T00:00:00-07:00</updated><entry><title>Solution to problem #5, section 6.1</title><link href="/math252_section6_1_number_5_solution.html" rel="alternate"></link><updated>2014-09-09T00:00:00-07:00</updated><author><name>Gary Church</name></author><id>tag:,2014-09-09:math252_section6_1_number_5_solution.html</id><summary type="html">&lt;h1&gt;Finding the slope that divides an area in half.&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Math Maniac's Musings</title><link href="/" rel="alternate"></link><link href="/feeds/gary-church.atom.xml" rel="self"></link><id>/</id><updated>2014-09-09T00:00:00-07:00</updated><entry><title>Solution to problem #5, section 6.1</title><link href="/math252_section6_1_number_5_solution.html" rel="alternate"></link><updated>2014-09-09T00:00:00-07:00</updated><author><name>Gary Church</name></author><id>tag:,2014-09-09:math252_section6_1_number_5_solution.html</id><summary type="html">&lt;h2&gt;Finding the slope that divides an area in half.&lt;/h2&gt;
 &lt;p&gt;The picture is&lt;/p&gt;
 &lt;!-- /Users/gary/Documents/Lynda/Ex_Files_Mdle2_EssT_Tch/Exercise Files/Chapter 04/Finished/Exports from Bridge/Week 2 Gallery/content/bin/images/large/_0410559155.jpg --&gt;
 
-&lt;p&gt;&lt;img alt="Alt text" src="images/slopeHalfArea.png" title="Problem 5, section 6.1" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="images/SlopeHalfArea.png" title="Problem 5, section 6.1" /&gt;&lt;/p&gt;
 &lt;p&gt;The total area under the parabola is found by evaluating $\int_0^{7/5} 7x -
 5x^2\;dx$. This gives a value of 343/150. For a line of slope $m$ through
 the origin with equation $y = mx$, we want to calculate $\int_0^{x_B} (7x
