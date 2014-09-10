@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math Maniac's Musings</title><link>/</link><description></description><atom:link href="/feeds/gary-church.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 09 Sep 2014 00:00:00 -0700</lastBuildDate><item><title>Solution to problem #5, section 6.1</title><link>/math252_section6_1_number_5_solution.html</link><description>&lt;h2&gt;Finding the slope that divides an area in half.&lt;/h2&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math Maniac's Musings</title><link>/</link><description></description><atom:link href="/feeds/gary-church.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 09 Sep 2014 00:00:00 -0700</lastBuildDate><item><title>Solution to problem 5, section 6.1</title><link>/math252_section6_1_number_5_solution.html</link><description>&lt;h2&gt;Finding the slope that divides an area in half.&lt;/h2&gt;
 &lt;p&gt;The picture is&lt;/p&gt;
 &lt;!-- /Users/gary/Documents/Lynda/Ex_Files_Mdle2_EssT_Tch/Exercise Files/Chapter 04/Finished/Exports from Bridge/Week 2 Gallery/content/bin/images/large/_0410559155.jpg --&gt;
 
@@ -32,7 +32,7 @@ expression&lt;/p&gt;
 to 343/300.&lt;/p&gt;
 &lt;p&gt;$$\left(\frac{7-m}{5}\right)^2 \left[\frac{7}{2} -
 \frac{5}{3}\left(\frac{7-m}{5}\right) - \frac{m}{2}\right] = \frac{343}{300}
-=\frac{5}{6}$$&lt;/p&gt;
+$$&lt;/p&gt;
 &lt;p&gt;Now combine the fractions in the brackets and simplify to get&lt;/p&gt;
 &lt;p&gt;$$\left(\frac{7-m}{5}\right)^2\left[\frac{7-m}{6}\right] = \frac{343}{300}$$&lt;/p&gt;
 &lt;p&gt;Multiplying out the left hand side, then multiplying through by 150 gives&lt;/p&gt;
